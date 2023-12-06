@@ -1,0 +1,424 @@
+html {
+  height:100%;
+}
+.iphone {
+  margin:auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  border:10px solid black;
+  border-radius:40px;
+  width:320px;
+  height:700px;
+  position:relative;
+  box-shadow:0px 20px 15px #33333335;
+}
+.notch {
+  z-index:50;
+  top:0;
+  left:62px;
+  position:absolute;
+  background:#000000;
+  width:200px;
+  height:30px;
+  border-radius:0px 0px 20px 20px;
+}
+.screen {
+  z-index:10;
+  position:absolute;
+  background:url("../images/iphone/background.jpeg");
+  background-size:cover;
+  width:100%;
+  height:100%;
+  border-radius:30px;
+}
+
+.insta-screen {
+  z-index:10;
+  position:absolute;
+  /* background:url("../images/insta/instabg.png"); */
+  background-size:cover;
+  width:100%;
+  height:100%;
+  border-radius:30px;
+  overflow-y: scroll;
+}
+
+.health-screen {
+  z-index:10;
+  position:absolute;
+  background:url("../images/health/healthbg.png");
+  background-size:cover;
+  width:100%;
+  height:100%;
+  border-radius:30px;
+  overflow-y: scroll;
+}
+
+.tinder-screen {
+  z-index:10;
+  position:absolute;
+  background:url("../images/tinder/tinder1.png");
+  background-size:cover;
+  width:100%;
+  height:100%;
+  border-radius:30px;
+}
+
+.tinder2-screen {
+  z-index:10;
+  position:absolute;
+  background:url("../images/tinder/tinder2.png");
+  background-size:cover;
+  width:100%;
+  height:100%;
+  border-radius:30px;
+}
+
+.amazon-screen {
+  z-index:10;
+  position:absolute;
+  background:url("../images/amazon/amazonbg.png");
+  background-size:cover;
+  width:100%;
+  height:100%;
+  border-radius:30px;
+}
+
+.notes-screen {
+  z-index:10;
+  position:absolute;
+  background:url("../images/notes/notesbg.png");
+  background-size:cover;
+  width:100%;
+  height:100%;
+  border-radius:30px;
+}
+
+.icons {
+  margin-top:40px;
+  justify-content:center;
+  display:flex;
+}
+.icons .app{
+  margin:10px;
+  z-index:100;
+  background:white;
+  width:50px;
+  height:50px;
+  border-radius:15px;
+  box-shadow:0px 5px 5px #33333340;
+  cursor:pointer;
+  transition: transform 400ms ease-in-out;
+}
+
+.icons .app_2_row{
+  margin:10px;
+  z-index:100;
+  background:white;
+  width:50px;
+  height:50px;
+  border-radius:15px;
+  box-shadow:0px 5px 5px #33333340;
+  cursor:pointer;
+  transition: transform 400ms ease-in-out;
+}
+
+.icons .app_asdf{
+  margin:10px;
+  z-index:100;
+  width:50px;
+  height:50px;
+  border-radius:15px;
+}
+
+#phone {
+  background:url("../images/iphone/phone.png");
+  background-size:cover;
+}
+#chrome {
+  background:url("../images/iphone/chrome.jpeg");
+  background-size:cover;
+  background-position:center;
+}
+#notes {
+  background:url("../images/iphone/notes.png");
+  background-size:cover;
+}
+#health {
+  background:url("../images/iphone/health.png");
+  background-size:cover;
+  background-position:center;
+}
+#instagram {
+  background:url("../images/iphone/instagram.webp");
+  background-size:cover;
+  background-position:center;
+}
+#tinder {
+  background:url("../images/iphone/tinder_logo.png");
+  background-size:cover;
+  background-position:center;
+}
+#amazon {
+  background:url("../images/iphone/amazon_logo.png");
+  background-size:cover;
+  background-position:center;
+}
+.app_2_row:nth-child(4) {
+  background:url("../images/iphone/wish.png");
+  background-size:cover;
+  background-position:center;
+}
+.app_3_row:nth-child(1) {
+  background:url("../images/iphone/coc.jpeg");
+  background-size:cover;
+}
+.app_3_row:nth-child(2) {
+  background:url("../images/iphone/candy-crush.jpeg");
+  background-size:cover;
+}
+.app_3_row:nth-child(3) {
+  background:url("../images/iphone/poker.jpg");
+  background-size:cover;
+}
+.app_3_row:nth-child(4) {
+  background:url("../images/iphone/cod.png");
+  background-size:cover;
+}
+.app_4_row:nth-child(1) {
+  background:url("../images/iphone/facebook.png");
+  background-size:cover;
+}
+.app_4_row:nth-child(2) {
+  background:url("../images/iphone/messenger.svg");
+  background-size:cover;
+}
+.app_4_row:nth-child(3) {
+  background:url("../images/iphone/whatsapp.png");
+  background-size:cover;
+}
+.app_4_row:nth-child(4) {
+  background:url("../images/iphone/instagram.webp");
+  background-size:cover;
+  background-position:center;
+}
+.icons div:hover{
+  transform:scale(0.8);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#okBtn {
+  padding: 8px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #676767;
+  color: #fff;
+  cursor: pointer;
+}
+
+#okBtn:hover {
+  background-color: #4f4f4f;
+}
+
+/* Explain */
+.explain-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  justify-content: center;
+  align-items: center;
+}
+
+#explain-okBtn {
+  padding: 8px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #676767;
+  color: #fff;
+  cursor: pointer;
+}
+
+#explain-okBtn:hover {
+  background-color: #4f4f4f;
+}
+
+
+/* Chrome */
+.news-box {
+  height: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow-y: scroll;
+  font-family: "itc-giovanni","ITC Giovanni Std","Georgia","Times New Roman","Times",serif;
+}
+
+.news-text {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Diary (Notes) */
+.diary-box {
+  height: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow-y: scroll;
+}
+
+.diary-writing {
+  padding-left: 20px;
+  padding-right:20px;
+  /* padding-top: 50px; */
+  font-family: sans-serif;
+}
+
+.diary-writing h5 {
+  font-size: 20px;
+}
+
+.diary-writing p {
+  font-size: 15px;
+}
+
+/* INSTA */
+.insta-img {
+  width: 320px;
+}
+
+/* SIDE PANEL */
+
+.balancer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.iphone-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Style for the side-panel */
+.side-panel-container {
+  flex: 0 0 auto;
+  margin-left: 20px; /* Adjust the distance from the iPhone */
+}
+
+/* Style for the side-panel */
+.side-panel {
+  background-color: #f2f2f2;
+  width: 220px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.side-panel h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.action-list {
+  list-style: none;
+  padding: 0;
+}
+
+.action-list li {
+  margin-bottom: 10px;
+}
+
+.action-list button {
+  display: inline-block;
+  width: 70%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ccc; /* Gray-based color for buttons */
+  color: #444; /* Text color */
+  font-size: 14px;
+  text-align: left;
+}
+
+.action-list button:hover {
+  background-color: #bbb; /* Darker color on hover */
+  cursor: pointer;
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 768px) {
+  .side-panel {
+    top: auto;
+    bottom: 10px;
+    right: 10px;
+    transform: none;
+  }
+}
+
+/* QUESTION-MARK */
+.question-mark-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* background-color: #ffcc00; */
+  background-image: url("../images/question.png"); /* Replace with your icon */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+
+.left-text {
+  text-align: left !important;
+}
+
+.left-text blockquote {
+  font-size: 1.2em;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f7f7f7;
+  border-left: 5px solid #3498db; /* Change the border color as desired */
+}

@@ -1,0 +1,11 @@
+.iphone {
+  margin:auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  border:10px solid black;
+  border-radius:40px;
+  width:340px !important;
+  height:720px !important;
+  position:relative;
+  box-shadow:0px 20px 15px #33333335;
+}
