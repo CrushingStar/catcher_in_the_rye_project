@@ -26,22 +26,22 @@ function goTinderBack() {
 
 function nextNote() {
   const current = window.location.href.split("/").pop();
-  if (current === "notes.html") {
+  if (current === "notes.html" || current == "notes") {
     window.location = "notes2.html";
-  } else if (current == "notes2.html") {
+  } else if (current == "notes2.html" || current == "notes2") {
     window.location = "notes3.html";
-  } else if (current == "notes3.html") {
+  } else if (current == "notes3.html" || current == "notes3") {
     window.location = "notes4.html";
   }
 }
 
 function prevNote() {
   const current = window.location.href.split("/").pop();
-  if (current === "notes2.html") {
+  if (current === "notes2.html" || current == "notes2") {
     window.location = "notes.html";
-  } else if (current == "notes3.html") {
+  } else if (current == "notes3.html" || current == "notes3") {
     window.location = "notes2.html";
-  } else if (current == "notes4.html") {
+  } else if (current == "notes4.html" || current == "notes4") {
     window.location = "notes3.html";
   }
 }
